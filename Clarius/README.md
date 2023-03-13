@@ -1,13 +1,13 @@
-A FastAPI CRUD App
+A FastAPI App on AWS
 This project is a REST_API app  with a Python FastAPI backend. It is hosted on serverless AWS infrastructure (using Lambda and DynamoDB).
 
-Clarius API app
 
 # API Folder
 The /api folder contains the Python FastAPI code. Run this shell script to build the code into a zip (required for CDK to upload to Lambda):
 
 # Go to api folder cd api and run docker commands: 
 docker build -t build_lambda .
+
 docker run --rm -v "cd:/code" build_lambda
 
 This should generate a lambda_function.zip in api folder.
@@ -26,7 +26,6 @@ cd Clarius/Clarius_Infra
 aws configure
 cdk bootstrap
 cdk deploy
-
 
 
 # Test Folder
