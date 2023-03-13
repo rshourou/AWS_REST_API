@@ -6,7 +6,6 @@ Clarius API app
 # API Folder
 The /api folder contains the Python FastAPI code. Run this shell script to build the code into a zip (required for CDK to upload to Lambda):
 
-# Only work on UNIX (Mac/Linux) systems!
 # Go to api folder cd api and run docker commands: 
 docker build -t build_lambda .
 docker run --rm -v "cd:/code" build_lambda
